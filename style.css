@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Oswald:wght@300;500;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0f1d2e;
+}
+
+
+.boasvindas{
+    width: 100%;
+    max-width: 450px;
+    height: 452px;
+    padding: 40px 30px 70px;
+    background-image: url(images/planet-space-abstract-background-digital-art-hd-wallpaper-uhdpaper.com-234@0@g-fotor-2023081910451.png);
+    background-size: cover;
+    margin-right: 500px;
+    position: absolute;
+    transition: all 0.8s ease;
+}
+
+.boasvindas h2{
+    font-size: 21px;
+    text-align: center;
+    color: white;
+}
+
+.boasvindas p{
+    font-size: 19px;
+    text-align: justify;
+    color: white;
+    margin-top: 70px;
+}
+
+
+
+header span{
+    font-size: 25px;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    z-index: 999;
+    background-color: white;
+
+}
+
+header nav a, button{
+    margin-left: 2rem;
+}
+
+.navbar a{
+   transition: all 0.3s ease;
+   position: relative;
+   color: black;
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+   background-color: #0f1d2e;
+    border-radius: 4px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .6s;
+}
+
+.navbar a:hover::after{
+    transform: scale(1);
+    transform-origin: left;
+}
+
+
+header nav .btnlogin{
+    margin-left: 2rem;
+    border: 1px solid #ffff;
+    background: transparent;
+    color: #0f1d2e;
+    padding: 10px;
+    width: 90px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+header nav .btnlogin:hover{
+    background: #0f1d2e;
+    border: 1px solid #ffff;
+    color: #0f1d2e;
+}
+
+header nav .btnlogin:active{
+    transform: scale(0.97);
+}
+
+.btncheck{
+    font-size: 30px;
+    color: #0f1d2e;
+    cursor: pointer;
+}
+
+.login i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    margin-right: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+
+}
+
+.cadastro h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+.cadastro{
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    background-color: aliceblue;
+    padding: 40px 30px 70px;
+    color: #0f1d2e;
+    position: absolute;
+    margin-right: 500px;
+    -webkit-box-shadow: -10px 10px 22px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 10px 22px 0px rgba(0,0,0,0.75);
+    box-shadow: -10px 10px 22px 0px rgba(0,0,0,0.75);
+}
+
+.login{
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    background-color: aliceblue;
+    padding: 40px 30px 70px;
+    color: #0f1d2e;
+    position: absolute;
+    margin-left: 370px;
+    -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+}
+
+.mover {
+   transform: translateX(450px);
+  }
+
+
+.login h2{
+    text-align: center;
+    font-size: 25px;
+    color: #0f1d2e;
+}
+
+.inputGroup i{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2rem;
+    line-height: 50px;
+}
+
+.inputGroup {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid;
+    margin: 30px 0;
+    font-size: 20px;
+  }
+  
+  .inputGroup input {
+    width: 95%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #0f1d2e;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+  }
+  
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    font-size: 1.2rem;
+  }
+  
+  .inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-160%);
+  }
+
+  .remember-forgot{
+    font-size: .9rem;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .remember-forgot a{
+    text-decoration: none;
+    color: #0f1d2e;
+  }
+
+  .remember-forgot a:hover{
+    text-decoration: underline;
+  }
+
+  .btn-send button{
+    width: 100%;
+    margin-top: 7px;
+    text-align: center;
+    height: 55px;
+    border: 1px solid #0f1d2e;
+    outline: none;
+    margin-left: 0;
+    border-radius: 5px;
+    background: #0f1d2e;
+    font-size: 20px;
+    color: white;
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+
+  .btn-send button:hover{
+    background: transparent;
+    border: 1px solid #0f1d2e;
+    color: #0f1d2e;
+}
+
+.btn-send button:active{
+    transform: scale(0.97);
+}
+
+.registrar{
+    text-align: center;
+}
+
+.registrar button{
+    background-color: none;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    padding: none;
+    margin: 0;
+}
+
+.logar{
+    text-align: center;
+}
+
+.logar button{
+    background-color: none;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    padding: none;
+    margin: 0;
+}
