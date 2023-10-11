@@ -31,9 +31,11 @@
 }
 
 .boasvindas h2{
-    font-size: 21px;
+    font-size: 36px;
     text-align: center;
     color: white;
+    margin-top: 120px;
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .boasvindas p{
@@ -290,3 +292,4 @@ header nav .btnlogin:active{
     padding: none;
     margin: 0;
 }
+
