@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Transferência</title>
+    <link rel="stylesheet" href="transferir_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <header>
+                <span>Transferência</span>
+                <nav class="navbar">
+                    <a href="pagina-inicial.html">Home</a>
+                    <a href="">Sobre</a>
+                    <a href="">Serviços</a>
+                    <a href="">Contato</a>
+                </nav>
+            </header>
+        </div>
+        <div class="conteudo">
+            <div class="transfer-form">
+                <h2>Sistema de Transferência</h2>
+                <div class="form-group">
+                    <label for="tipo-transferencia">Tipo de Transferência:</label>
+                    <select id="tipo-transferencia" onchange="mostrarCampos()">
+                        <option value="pix">PIX</option>
+                        <option value="ted">TED</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="valor-transferencia">Valor da Transferência:</label>
+                    <input type="text" id="valor-transferencia" placeholder="Digite o valor">
+                </div>
+
+                <div class="form-group" id="campo-chave-pix">
+                    <label for="chave-pix">Chave PIX:</label>
+                    <input type="text" id="chave-pix" placeholder="Digite sua chave PIX">
+                </div>
+
+                <div class="form-group" id="campo-banco-ted">
+                    <label for="banco-ted">Banco (TED):</label>
+                    <input type="text" id="banco-ted" placeholder="Digite o banco">
+                </div>
+
+                <div class="form-group" id="campo-agencia-ted">
+                    <label for="agencia-ted">Agência (TED):</label>
+                    <input type="text" id="agencia-ted" placeholder="Digite a agência">
+                </div>
+
+                <div class="form-group" id="campo-conta-ted">
+                    <label for="conta-ted">Conta (TED):</label>
+                    <input type="text" id="conta-ted" placeholder="Digite o número da conta">
+                </div>
+
+                <button onclick="realizarTransferencia()">Realizar Transferência</button>
+            </div>
+        </div>
+        <script src="transferir.js"></script>
+</body>
+
+
+
+
+</html>

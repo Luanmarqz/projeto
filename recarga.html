@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recarga_style.css">
+    <title>Sistema de Recarga</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <header>
+                <span>Recarregamento</span>
+                <nav class="navbar">
+                    <a href="pagina-inicial.html">Home</a>
+                    <a href="">Sobre</a>
+                    <a href="">Serviços</a>
+                    <a href="">Contato</a>
+                </nav>
+            </header>
+        </div>
+        <div class="conteudo">
+            <h1>Sistema de Recarga de Cartão</h1>
+
+            <div class="options">
+                <button id="pixBtn">Recarga Pix</button>
+                <button id="transferBtn">Recarga por Transferência</button>
+                <button id="creditCardBtn">Recarga por Cartão de Crédito</button>
+            </div>
+
+            <div id="pixForm" class="form hidden">
+                <h2>Recarga Pix</h2>
+                <!-- Formulário para recarga Pix -->
+                <!-- Adicione campos relevantes conforme necessário -->
+                <label for="pixAmount">Valor:</label>
+                <input type="text" id="pixAmount" name="pixAmount">
+                <button id="submitPix">Recarregar</button>
+            </div>
+
+            <div id="transferForm" class="form hidden">
+                <h2>Recarga por Transferência</h2>
+                <!-- Formulário para recarga por transferência -->
+                <!-- Adicione campos relevantes conforme necessário -->
+                <label for="transferAmount">Valor:</label>
+                <input type="text" id="transferAmount" name="transferAmount">
+                <button id="submitTransfer">Recarregar</button>
+            </div>
+
+            <div id="creditCardForm" class="form hidden">
+                <h2>Recarga por Cartão de Crédito</h2>
+                <!-- Formulário para recarga por cartão de crédito -->
+                <!-- Adicione campos relevantes conforme necessário -->
+                <label for="creditCardAmount">Valor:</label>
+                <input type="text" id="creditCardAmount" name="creditCardAmount">
+                <label for="creditCardNumber">Número do Cartão:</label>
+                <input type="text" id="creditCardNumber" name="creditCardNumber">
+                <button id="submitCreditCard">Recarregar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="recarga.js"></script>
+</body>
+
+</html>

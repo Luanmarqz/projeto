@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagar_style.css">
+    <title>Pagamento no Restaurante Universitário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <header>
+                <span>Pagamento</span>
+                <nav class="navbar">
+                    <a href="pagina-inicial.html">Home</a>
+                    <a href="">Sobre</a>
+                    <a href="">Serviços</a>
+                    <a href="">Contato</a>
+                </nav>
+            </header>
+        </div>
+        <div class="conteudo">
+            <div class="card">
+                <h2>Cartão Virtual</h2>
+                <p>Saldo Disponível: R$ 200,00</p>
+            </div>
+
+            <h1>Pagamento no Restaurante Universitário</h1>
+
+            <div class="payment-form">
+                <label for="meal">Selecione a Refeição:</label>
+                <select id="meal" name="meal">
+                    <option value="breakfast">Café da Manhã</option>
+                    <option value="lunch">Almoço</option>
+                    <option value="dinner">Janta</option>
+                </select>
+
+                <label for="amount">Valor a Pagar:</label>
+                <input type="text" id="amount" name="amount" placeholder="Digite o valor em R$">
+
+                <button id="submitPayment">Pagar</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
