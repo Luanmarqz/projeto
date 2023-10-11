@@ -1,118 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Oswald:wght@300;500;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="pag-inicial.css">
+    <link rel="shortcut icon" type="imagex/png" href="images/pngwing.com.png">
+</head>
 
-.container{
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #0f1d2e;
-}
+<body>
+    <div class="container">
+        <div class="navbar">
+            <header>
+                <span>Seja Bem-Vindo(a)</span>
+                <nav class="navbar">
+                    <a href="">
+                        <i class="fa-regular fa-id-card"></i>
+                    </a>
+                    <a href="index.html"><i class="fa-solid fa-right-from-bracket"></i>
+                    </a>
+                </nav>
+            </header>
+        </div>
 
-header span{
-    color: #0f1d2e;
-    font-size: 25px;
-}
+        <div class="conteudo">
+            <div class="perfil"></div>
+            <div class="saldo">
+                <h2>Saldo na conta</h2>
+                <h1>R$ 200,00</h1>
+                <br>
+                <h2>Saldo a receber</h2>
+                <h1>R$ 20,00</h1>
+            </div>
+            <div class="funcionalidades">
+                <a href="cartao.html">
+                    <div class="card">
+                        <div class="box">
+                            <span><i class="fa-regular fa-credit-card"></i></span>
+                            <p>Cartão Virtual</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="recarga.html">
+                    <div class="card">
+                        <div class="box">
+                            <span><i class="fa-solid fa-money-bill-transfer"></i></i></span>
+                            <p>Recarregar</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="pagar.html">
+                    <div class="card">
+                        <div class="box">
+                            <span>
+                                <i class="fa-solid fa-money-bill"></i>
+                            </span>
+                            <p>Pagar</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="funcionalidades2">
+                <a href="transferir.html">
+                    <div class="card">
+                        <div class="box">
+                            <span><i class="fa-solid fa-right-left"></i></i></span>
+                            <p>Transferir</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="extrato.html">
+                    <div class="card">
+                        <div class="box">
+                            <span><i class="fa-regular fa-file-lines"></i></span>
+                            <p>Extrato</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="card">
+                        <div class="box">
+                            <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                            <p>Sair</p>
+                        </div>
+                    </div>
+                </a>
 
-header{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1rem 1rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-    z-index: 999;
-    background-color: white;
-}
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c976b72373.js" crossorigin="anonymous"></script>
+</body>
 
-header span{
-    margin-left: 400px;
-    font-size: 20px;
-}
-
-.navbar{
-    margin-right: 400px;
-}
-
-.navbar a{
-    color: #0f1d2e;
-    transition: all 0.3s ease;
-    position: relative;
-    margin-right: 20px;
-    font-size: 28px;
-    transition: all ease 0.3s;
- }
-
- .conteudo{
-    margin-top: 50px;
-    width: 1200px;
-    height: 700px;
-    border-radius: 4px;
-    position: absolute;
-    background-color: white;
-    box-shadow: 1px 1px 0 2px black;
- }
-
-
- .perfil {
-    margin-top: 30px;
-    margin-left: 150px;
-    width: 200px;
-    height: 190px;
-    border-radius: 30px;
-    box-shadow: 15px 15px 30px #bebebe;
-    background-image: url(images/1200px-Breezeicons-actions-22-im-user.svg.png);
-    background-size: cover;
-    background-position: center;
-    border: solid 1px;
-  }
-
-  .saldo{
-    margin-left: 400px;
-    margin-top: -160px;
-  }
-
-  .funcionalidades, .funcionalidades2{
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .card{
-    width: 210px;
-    height: 140px;
-    background-color: #0f1d2e;
-    color: white;
-    align-items: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 3px black;
-    cursor: pointer;
-    text-align: center;
-    transition: all ease 0.3s;
-  }
-
-
-  .card span i{
-    margin-top: 50px;
-    font-size: 30px;
-  }
-
-  .card:hover{
-    transform: scale(1.05);
-  }
-
-
-
-
-
+</html>
